@@ -1,0 +1,191 @@
+#PROGRAM1
+#Greatest number of two numbers
+a=int(input())
+b=int(input())
+if a>0:
+   print(a)
+else:
+   print(b)
+
+#PROGRAM2
+#Greatest number of three numbers
+a=int(input())
+b=int(input())
+c=int(input())
+if a>b and a>c:
+   print(a)
+elif b>a and b>c:
+   print(b)
+else:
+   print(c)
+
+#PROGRAM3
+#Second greatest number of two numbers
+a=int(input())
+b=int(input())
+if a>b:
+   print(b)
+else:
+   print(a)
+
+#PROGRAM4
+#Second greatest number of three numbers
+#Approach-1
+a=int(input())
+b=int(input())
+c=int(input())
+
+if a>b and b>c:
+    print(b)
+elif b>c and c>a:
+    print(c)
+else:
+    print(a)
+
+#Approach-2
+a=int(input())
+b=int(input())
+c=int(input())
+if a>b and a>c:
+    a=0
+elif b>c:
+    b=0
+else:
+    c=0
+if a>b and a>c:
+    print(a)
+
+elif b>c:
+    print(b)
+
+else:
+    print(c)
+
+#PROGRAM5
+#Print Hello World For 100 times
+for i in range(100):
+   print('Hello World')
+
+#PROGRAM6
+#Small,Large,Equal
+a,b=input().split()
+if a<b:
+    print('a<b')
+
+elif a>b:
+    print('a>b')
+
+else:
+    print('a=b')
+
+#PROGRAM7
+#Triangle or not
+a,b,c = input().split()
+if a+b>c or b+c>a or a+c>b:
+    print("Yes")
+else:
+    print("No")
+
+#PROGRAM8
+#Print reverse number in positive integers
+a=int(input())
+rev=0
+b=a
+if a<0:
+    b= a*(-1)
+
+while b>0:
+   rev=rev*10+b%10
+   b=b//10
+
+if a<0:
+    print(-1*(rev))
+    
+else:
+    print(rev)
+
+#PROGRAM9
+#watermelon
+a=int(input())
+if a%2==0 and a>2:
+    print("yes")
+else:
+    print("No")'''
+'''a=int(input())
+    
+while a>0:
+    b=int(input())
+    if b>98:
+        print("Yes")
+    else:
+        print("No")
+    a=a-1
+
+#PROGRAM10
+#DIscount
+'''d=int(input())
+for i in range(d):
+    a=int(input())
+    print(100-a)'''
+
+#PROGRAM11
+#Tv Discount
+#Approach-1
+t=int(input())
+discount1=0
+discount2=0
+for i in range(t):
+    a,b,c,d=map(int,input().split())
+    discount1=a-c
+    discount2=b-d
+    if discount1<discount2:
+        print("First")
+    elif discount1==discount2:
+        print("Any")
+    else:
+        print("Second")
+#Approach-2
+t=int(input())
+for i in range(t):
+    n,x=input().split()
+    
+    if(n>x):
+        k=n-x
+        if k%4==0:
+            print(k//4)
+        else:
+            print((k//4)+1)
+
+    else:
+        print(0)
+
+#Program12
+#Pizza
+t=int(input())
+for i in range(t):
+    a,b=input().split()
+    ts=a*b
+    tp=0
+    c=0
+    while ts>4:
+        tp=tp+1
+        ts=ts-4
+    if tp==0:
+        print(tp)
+    else:
+        print(tp+1)
+
+    
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
