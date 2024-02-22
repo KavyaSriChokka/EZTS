@@ -1,0 +1,143 @@
+#PROGRAM1
+#List
+def myFun(x):
+    x[0]=20
+lst=[10,11,12,13,14,15]
+myFun(lst)
+lst[0]=100
+print(lst)
+
+#PROGRAM2
+#Sugarcane Juice
+#Approach-1
+t=int(input())
+for i in range(t):
+    n=int(input())
+    p=int((n*50)-((0.7)*(n*50)))
+    print(x)
+
+#Approach-2
+t=int(input())
+while t>0:
+    n=int(input())
+    p=int((n*50)-((0.7)*(n*50)))
+    print(x)
+    t=t-1
+
+#Approach-3
+t=int(input())
+def profit(n):
+    x=int((n*50)-((0.7)*(n*50)))
+    return x
+def test(t):
+    if t>0:
+        n=int(input())
+        print(profit(n))
+    else:
+        return
+    test(t-1)
+test(t)
+
+#PROGRAM3
+#Watching Movie 2x
+x,y=map(int,input().split())
+def total(x,y):
+    print((int(y/2))+(x-y))
+total(x,y)
+
+#PROGRAM4
+#Lucky Four
+#Approach-1
+t=int(input())
+for i in range(t):
+    n=int(input())
+    c=0
+    while n>0:
+        if n%10==4:
+            c=c+1
+        n=n//10
+    print(c)
+
+#Approach-2
+t=int(input())
+def luckyfour(n):
+    while n>0:
+        if n%10==4:
+            c=c+1
+        n=n//10
+    return c
+def test(x):
+    if x>0:
+        n=int(input())
+        print(luckyfour(n))
+    else:
+        return
+    test(x-1)
+test(t)
+
+#PROGRAM5
+#Compute N!
+#Approach-1
+n=int(input())
+b=1
+for i in range(n):
+    b=b*i+b
+print(b)
+
+#Approach-2
+n=int(input())
+b=1
+while n>0:
+    b=b*n
+    n=n-1
+print(n)
+
+#Approach-3
+def fact(n):
+    if n==0 or n==1:
+        return 0 
+    else:
+        return n*fact(n-1)
+a=int(input())
+print(fact(a))
+
+#PROGRAM6
+#Append three
+#Approach-1
+num=int(input())
+num1=(num*10)+3
+
+def reverse(num):
+    rev=0
+    rev=rev*10+num1%10
+    n=n/10
+
+print(reverse(num1))
+
+#Approach-2
+n=int(input())
+
+def temp(n):
+    r=n
+    c=0
+    while r>0:
+        c+=1
+        r=r//10
+    n=(3*pow(10,c))+n
+    n=n*10+3
+    return n
+print(temp(n))
+
+    
+    
+
+    
+
+    
+    
+
+
+   
+    
+    
+    
