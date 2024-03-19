@@ -1,0 +1,241 @@
+#PROGRAM1
+#Odd index
+#Approach-1
+'''s=input()
+n=len(s)
+es=""
+os=""
+for i in range(n):
+    if i%2 ==0:
+        es=es+s[i]
+    else:
+        os=os+s[i]
+print(os+es)
+
+#Approach-2
+s=input()
+os=s[1:2]
+es=s[::2]
+print(os+es)
+
+#PROGRAM-2
+#Occurence of a character
+s=input()
+ch=input()
+c=0
+for i in s:
+    if i==ch:
+        c+=1
+print(c)
+
+#Approach-2
+s=input()
+ch=input()
+n=len(s)
+c=0
+for i in range(n):
+    if i%2==0:
+        if s[i]==ch:
+            c+=1
+print(c)
+
+#PROGRAM-3
+#Vowels in string
+#Approach-1
+s=input()
+v=['a','e','i','o','u','A','E','I','O','U']
+c=0
+for i in s:
+    if i in v:
+        c+=1
+if c==len(s):
+    print("Yes")
+else:
+    print("No")
+
+#Approach-2
+s=input()
+v=['a','e','i','o','u','A','E','I','O','U']
+c=0
+for i in s:
+    if i not in v:
+        c+=1
+if c==0:
+    print("Yes")
+else:
+    print("No")
+
+#Approach-3
+s=input()
+v="aeiouAEIOU"
+c=0
+for i in s:
+    if i not in v:
+        print("No")
+        break
+else:
+    print("Yes")
+
+#PROGRAM-4
+#Digits in a String
+#Approach-1
+s=input()
+n="0123456789"
+c=0
+for i in s:
+    if i in n:
+        c+=1
+if c==len(s):
+    print("Yes")
+else:
+    print("No")
+#Approach-2
+s=input()
+n="0123456789"
+c=0
+for i in s:
+    if i not in n:
+        c+=1
+if c==0:
+    print("Yes")
+else:
+    print("No")
+#Approach-3
+s=input()
+n="0123456789"
+c=0
+for i in s:
+    if i not in n:
+        print("No")
+        break
+else:
+    print("Yes")
+
+#Approach-4
+s=input()
+if s.isdigit():
+    print("Yes")
+else:
+    print("No")
+
+#PROGRAM5
+#Count Vowels and Consonants
+#Approach-1
+s=input()
+v="aeiouAEIOU"
+n=len(s)
+c=0
+for i in s:
+    if i in v:
+        c+=1
+x=n-c
+print(str(c)+" "+str(x))
+
+#Approach-2
+s=input()
+v="aeiouAEIOU"
+n=len(s)
+c=0
+x=0
+for i in s:
+    if i in v:
+        c+=1
+    elif i.isalpha():
+        x+=1
+print(str(c)+" "+str(x))
+
+#PROGRAM6
+#Compress  a string
+s=input()
+for i in s:
+    if i in
+
+#PROGRAM7
+#Print the count of word,vowel,cosonant
+t=int(input())
+for i in range(t):
+    s=list(input().split())
+    w=len(s)
+    v="aeiouAEIOU"
+    c=0
+    x=0
+    for i in s:
+        for j in i:
+            if j in v:
+              c+=1
+            else:
+              x+=1
+    print(str(w)+" "+str(c)+" "+str(x))
+
+#PROGRAM8
+t=int(input())
+for i in range(t):
+    a,b=input().split()
+    r=""
+    for i in b:
+        if i not in a:
+            r=r+i
+    print(r)
+
+#PROGRAM9
+#Factorial
+class cse:
+    def factorial(self,n):
+        r=1
+        for i in range(1,n+1):
+            r=r*i
+        print(r)
+ob=cse()
+ob.factorial(5)
+
+class a:
+    def __init__(self,n):
+        self.n=n
+        print(n)
+    def factorial(self):
+        r=1
+        for i in range(1,self.n+1):
+            r=r*i
+        print(r)
+        
+ob=a(5)
+ob.factorial()
+'''
+#Factorial using Recursion
+class a:
+    def __init__(self,n):
+        self.n=n
+        print(n)
+    def rfactorial(self):
+        print(self.rfactorial(self.n))
+    def factorial(self,n):
+       
+        if self.n==0 or self.n==1:
+            return 1
+        else:
+            return n*self.factorial(n-1)
+    
+ob=a(6)
+ob.rfactorial()
+
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
